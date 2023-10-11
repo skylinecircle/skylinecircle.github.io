@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="/assets/images/favicon.png"/>
+  <title> SkylineCircle - Beweglichkeitszirkel </title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/plugins.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/settings.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/layers.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/navigation.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/type/type.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
+  <!--page wise css-->
+  <link rel="stylesheet" type="text/css" href="/assets/css/color/blue.css">
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/font/font2.css">
+    
+  
+  <!--/.page wise css-->
+  
+</head>
+<body >
+  <div class="content-wrapper">
+    <nav
+  class="navbar  absolute transparent inverse-text nav-uppercase  navbar-hover-opacity navbar-expand-lg">
+  <div
+    class=" container  flex-row justify-content-center">
+    <div class="navbar-brand">
+      <a href="http://localhost:4000">
+        
+        <img src="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png"
+          srcset="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png 1x, /assets/images/logo-light@2x.png 2x"
+          class=" logo-light "
+          alt="Skyline Circle" style="max-height: 50px" />
+        
+        <img src="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png"
+          srcset="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png 1x, /assets/images/logo@2x.png 2x"
+          class=" logo-dark  "
+          alt="Skyline Circle" style="max-height: 50px" />
+      </a>
+    </div>
+    <div class="navbar-other ml-auto order-lg-3">
+      <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+        <li class="nav-item">
+          <div class="navbar-hamburger d-lg-none d-xl-none ml-auto">
+            <button class="hamburger animate plain" data-toggle="offcanvas-nav"><span></span></button>
+          </div>
+        </li>
+        
+        <li class="dropdown search-dropdown position-static nav-item">
+          <a href="#" role="button" class="collapse-toggle" data-toggle="collapse" data-target=".search-dropdown-menu"
+            aria-haspopup="true" aria-expanded="false"><i class="jam jam-search"></i></a>
+          <div class="dropdown-menu search-dropdown-menu w-100 collapse">
+            <div class="form-wrapper">
+              <form class="inverse-text">
+                <input type="text" id="search-input" class="form-control" placeholder="Search blog posts.." />
+                <i class="dropdown-close jam jam-close"></i>
+              </form>
+              <!-- /.search-form -->
+            </div>
+            <!-- /.form-wrapper -->
+            <ul id="results-container" class="position-static"></ul>
+          </div>
+        </li>
+        <li class="nav-item"><button class="plain" data-toggle="offcanvas-info"><i class="jam jam-info"></i></button>
+        </li>
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-other -->
+    <div class="navbar-collapse offcanvas-nav">
+      <div class="offcanvas-header d-lg-none d-xl-none">
+        <a href="http://localhost:4000">
+          <img src="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png"
+            srcset="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png 1x, /assets/images/logo-light@2x.png 2x"
+            alt="Skyline Circle" /></a>
+        <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
+      </div>
+      <ul class="navbar-nav  mx-auto ">
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/">Home</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/beweglichkeitszirkel">SkylineCircle</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/faszientower">Faszientower</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/all-in-1">All in 1</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/moby">Moby</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/skylinefoot">SkylineFoot</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/methode">Methode</a>
+            
+            
+        </li>
+        
+        
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!-- /.navbar -->
+<div class="offcanvas-info inverse-text">
+  <button class="plain offcanvas-close offcanvas-info-close"><i class="jam jam-close"></i></button>
+  <a href="http://localhost:4000">
+    <img src="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png"
+      srcset="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png 1x, /assets/images/logo-light@2x.png 2x"
+      class=" logo-light "
+      alt="Skyline Circle" />
+  </a>
+  <div class="space30"></div>
+  <p>Skyline ist ein Familienunternehmen aus Niedersachsen, das sich auf die Produktion von Beweglichkeitszirkeln spezialisiert hat. Unsere hochwertigen Zirkel sind für Fitnessstudios, Physiopraxen, Hotels, Unternehmen und auch für zu Hause geeignet.</p>
+  <div class="space20"></div>
+  <div class="widget">
+    <h5 class="widget-title">Contact Info</h5>
+    <address> Skyline GmbH<br />Alexander Flaming<br />Drosselweg 13<br />49661 Cloppenburg<div class="space20"></div>
+      <a href="mailto:info@skylinecircle.com" class="nocolor"></a><br />
+      04471 900 93 70
+    </address>
+  </div>
+  <!-- /.widget -->
+  <div class="widget">
+    
+    <h3 class="widget-title">Mehr Erfahren</h3>
+    
+    <ul class="list-unstyled">
+      
+      <li><a href="about.html" class="nocolor">Über uns</a></li>
+      
+      <li><a href="about.html" class="nocolor">Unsere Geschichte</a></li>
+      
+      <li><a href="#" class="nocolor">Preise</a></li>
+      
+      <li><a href="#" class="nocolor">Funktionen</a></li>
+      
+    </ul>
+  </div>
+  <!-- /.widget -->
+  <div class="widget">
+    
+    <h3 class="widget-title">Folge uns</h3>
+    
+    <ul class="social social-mute social-s ml-auto">
+      
+      <li><a href="https://www.facebook.com/profile.php?id=100063806130122/"><i class="jam jam-facebook"></i></a></li>
+      
+      <li><a href="https://www.instagram.com/skyline_circle/"><i class="jam jam-instagram"></i></a></li>
+      
+      <li><a href="https://www.youtube.com/@skylinecircle4995/"><i class="jam jam-youtube"></i></a></li>
+      
+    </ul>
+  </div>
+  <!-- /.widget -->
+</div>
+<!-- /.offcanvas-info -->
+
+
+
+
+<div class="hero-area">
+<div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="https://skylinecircle.com/wp-content/uploads/slider/cache/f5c59e6c952f0c21347655a78a57c758/20191101_105744.jpg">
+  <div class="container inner text-center">
+    <div class="row">
+        <div class="col-md-7 mx-auto">
+                    <div class="space140"></div>
+                    
+                     <h2 class="section-title text-uppercase mb-30 text-center">Skyline Beweglichkeitszirkel</h2>
+                    
+                    
+                     <h1 class="display-1">Effektivität und Vielseitigkeit machen den Zirkel zum natürlichen Werkzeug für Fitness- und Gesundheitsclubs.</h1>
+                    
+                    
+        </div>
+    </div>
+    <div class="space200"></div>
+  </div>
+  <!-- /.container -->
+  <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 20.98">
+      <path d="M0,0V21H1070V0A6830.24,6830.24,0,0,1,0,0Z" /></svg></div>
+</div>
+</div>
+
+
+
+
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          
+           <h2 class="title-color color-gray text-center">Skyline Beweglichkeitszirkel</h2>
+          
+          
+           <h3 class="display-3 text-center">Ein Meisterwerk für Ihren Fitness- und Gesundheitsclub</h3>
+          
+        </div>
+      </div>
+      <div class="space40"></div>
+      <div class="row gutter-50">
+        
+        <div class="col-md-6 col-lg-4  pb-3 ">
+          <div class="d-flex flex-row justify-content-center">
+            <div>
+              <div class="icon icon-blob icon-blob-rose color-rose mr-25">
+                <i class="icofont-medicine"></i>
+              </div>
+            </div>
+            <div>
+              <h5>Gezielte Schmerzlinderung</h5>
+              <p>Der Zirkel ist darauf ausgerichtet, gezielt Rücken-, Arthritis- und Gelenkschmerzen zu lindern. Durch spezifische Übungen werden Muskeln und Faszien trainiert, was zu einer spürbaren Verbesserung der Beschwerden führen kann.</p>
+            </div>
+          </div>
+        </div>
+        <!--/column -->
+       
+        <div class="col-md-6 col-lg-4  pb-3 ">
+          <div class="d-flex flex-row justify-content-center">
+            <div>
+              <div class="icon icon-blob icon-blob-blue color-blue mr-25">
+                <i class="icofont-ui-settings"></i>
+              </div>
+            </div>
+            <div>
+              <h5>Individualität und Anpassbarkeit</h5>
+              <p>Der Beweglichkeitszirkel kann an verschiedene Fitnesslevel und Bedürfnisse angepasst werden. Somit ist er für Menschen jeden Alters und jeder körperlichen Verfassung geeignet.</p>
+            </div>
+          </div>
+        </div>
+        <!--/column -->
+       
+        <div class="col-md-6 col-lg-4  pb-3 ">
+          <div class="d-flex flex-row justify-content-center">
+            <div>
+              <div class="icon icon-blob icon-blob-green color-green mr-25">
+                <i class="icofont-runner"></i>
+              </div>
+            </div>
+            <div>
+              <h5>Steigerung der Beweglichkeit</h5>
+              <p>Durch das gezielte Längentraining des Muskel- und Fasziensystems wird die Beweglichkeit verbessert. Dies wirkt sich nicht nur positiv auf die Muskulatur aus, sondern auch auf die Flexibilität der Gelenke.</p>
+            </div>
+          </div>
+        </div>
+        <!--/column -->
+       
+        <div class="col-md-6 col-lg-4  pb-3 pb-lg-0 ">
+          <div class="d-flex flex-row justify-content-center">
+            <div>
+              <div class="icon icon-blob icon-blob-purple color-purple mr-25">
+                <i class="icofont-user"></i>
+              </div>
+            </div>
+            <div>
+              <h5>Effektives Ganzkörperdehnen</h5>
+              <p>Der Zirkel bietet eine breite Palette von Übungen, die den gesamten Körper ansprechen. Von der Rückenmuskulatur bis zu den Gelenken – jedes Element des Bewegungsapparates wird trainiert und gestärkt.</p>
+            </div>
+          </div>
+        </div>
+        <!--/column -->
+       
+        <div class="col-md-6 col-lg-4  pb-3 pb-lg-0 ">
+          <div class="d-flex flex-row justify-content-center">
+            <div>
+              <div class="icon icon-blob icon-blob-orange color-orange mr-25">
+                <i class="icofont-thumbs-up"></i>
+              </div>
+            </div>
+            <div>
+              <h5>Kundenbindung und -zufriedenheit</h5>
+              <p>Die Möglichkeit, gezielte Lösungen für Schmerzprobleme anzubieten, steigert nicht nur die Zufriedenheit der bestehenden Mitglieder, sondern zieht auch neue Kunden an, die nach Schmerzlinderung suchen.</p>
+            </div>
+          </div>
+        </div>
+        <!--/column -->
+       
+        <div class="col-md-6 col-lg-4  pb-3 pb-lg-0 ">
+          <div class="d-flex flex-row justify-content-center">
+            <div>
+              <div class="icon icon-blob icon-blob-violet color-violet mr-25">
+                <i class="icofont-badge"></i>
+              </div>
+            </div>
+            <div>
+              <h5>Hohe Qualität und Langlebigkeit</h5>
+              <p>Skyline Beweglichkeitszirkel zeichnen sich durch hochwertige Materialien und präzise Verarbeitung aus. Sie sind nicht nur effektiv, sondern auch langlebig, was eine langfristige Investition für Ihr Fitnessstudio bedeutet.</p>
+            </div>
+          </div>
+        </div>
+        <!--/column -->
+       
+      </div>
+      <!--/.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.wrapper -->
+  
+
+
+
+
+
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <h3 class="display-2 text-center mb30">Die Übungen</h3>
+    <h4 class="display-4 text-center mb-80">Unsere Beweglichkeitszirkel-Übungen im Detail</h4>
+    <div class="grid grid-view boxed">
+      <div class="tiles text-center light-gallery-wrapper">
+        <div class="row isotope">
+          
+          <div class="item grid-sizer col-md-6 col-lg-4 ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/4.png" class="lightbox">
+                  <img src="/assets/images/4.png" alt="Hüftbeuger"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Hüftbeuger</a></h2>
+                <div class="meta mb-0"></div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4 ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/6.png" class="lightbox">
+                  <img src="/assets/images/6.png" alt="Rücken"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Rücken</a></h2>
+                <div class="meta mb-0"></div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4 ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/1.png" class="lightbox">
+                  <img src="/assets/images/1.png" alt="Hüfte/Bauch/Brust"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Hüfte/Bauch/Brust</a></h2>
+                <div class="meta mb-0"></div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4 ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/7.png" class="lightbox">
+                  <img src="/assets/images/7.png" alt="Gluteus"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Gluteus</a></h2>
+                <div class="meta mb-0"></div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4 ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/5.png" class="lightbox">
+                  <img src="/assets/images/5.png" alt="Brust"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Brust</a></h2>
+                <div class="meta mb-0"></div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4 ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/3.png" class="lightbox">
+                  <img src="/assets/images/3.png" alt="Spagat"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Spagat</a></h2>
+                <div class="meta mb-0"></div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4 ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/2.png" class="lightbox">
+                  <img src="/assets/images/2.png" alt="Waden"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Waden</a></h2>
+                <div class="meta mb-0"></div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4 ">
+            <div class="box bg-white shadow p-30">
+              <figure class="main overlay overlay2 rounded mb-30">
+                <a href="/assets/images/8.png" class="lightbox">
+                  <img src="/assets/images/8.png" alt="Nacken/Trapezius"/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#">Nacken/Trapezius</a></h2>
+                <div class="meta mb-0"></div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.tiles -->
+    </div>
+    <!-- /.grid -->
+  </div>
+</div>
+
+
+
+  <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-gray-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 56.98">
+      <path d="M0,2S140.54-7.76,299,16c247,37,483-3,590-4,104-1,181,14,181,14V57H0Z" /></svg></div>
+
+
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    <h2 class="display-2 col-md-9 text-center mb-30" style="margin-left: auto; margin-right: auto">Werden Sie Teil der Skyline Beweglichkeitszirkel-Revolution in Deutschland!</h2>
+    <h3 class="display-3 col-md-9 text-center mb-80" style="margin-left: auto; margin-right: auto">Die meisten Bürger sind bereits jetzt in Reichweite von einem SkylineCircle</h3>
+    <div class="two-columns-wrapper">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="img-blob blob10">
+            <img src="/assets/images/map.png" style="width: 30rem" />
+          </div>
+        </div>
+        <div class="col-md-5">
+          <h3 class="section-title mt-80">Tauchen Sie ein in die Welt der Beweglichkeitszirkel.</h3>
+          <p class="lead">
+            SkylineCircle-Beweglichkeitszirkel sind bereits jetzt deutschlandweit verbreitet, nur wenige Kilometer entfernt von den meisten Bürgern. Ihr Fitnessstudio kann das nächste sein! Ziehen Sie neue Mitglieder an und gestalten Sie Ihr Studio neu.
+          </p>
+          <p>Jetzt ist der perfekte Zeitpunkt für Ihren Schritt in die Zukunft der Fitnessbranche! Werden Sie Vorreiter in der Fitnesswelt mit SkylineCircle!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 20.98">
+      <path d="M0,0V21H1070V0A6830.24,6830.24,0,0,1,0,0Z" /></svg></div>
+</div>
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="two-columns-wrapper">
+      <div class="row">
+        <div class="col-md-5">
+          <h3 class="section-title mt-80">Von Olympia-Athleten bis Senioren: Skyline Beweglichkeitszirkel schenken Bewegungsfreiheit!</h3>
+          <p class="lead">
+            Was einst als Traum begann, Menschen zu helfen, verwandelt sich nun in eine werdende Wirklichkeit: Skyline-Beweglichkeitszirkel verändern Fitnessstudios im ganzen Land.
+          </p>
+          <p>
+            Von olympischen Athleten im Ruderclub Potsdam bis hin zu Senioren in charmanten Fachwerkstädtten – jeder profitiert von dieser Innovation. Besonders Menschen mit Rücken-, Arthritis- und Gelenkschmerzen finden hier Hilfe. Schließen Sie sich uns an, jetzt Teil dieser Bewegung zu werden und entdecken auch Sie die neuen Möglichkeiten von denen Fitnessstudios im ganzen Land bereits profitieren.
+          </p>
+          <a href="about.html" class="btn btn-l btn-strong-hover btn-icon btn-icon-left mr-10 lightbox">
+            <i class="jam jam-arrow-right"></i> Entdecken Sie unsere Geschichte
+          </a>
+        </div>
+        <div class="col-md-6 mx-auto">
+          <div class="img-blob blob4">
+            <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t1.6435-9/78785457_1278427949031444_7081629613373259776_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a26aad&_nc_ohc=XXp0MB0vmIwAX85MfYy&_nc_ht=scontent-ord5-2.xx&oh=00_AfDKzU52zVPuKds0Z8tB66zHfMsA_y9lzl7ocM-g5MEwZA&oe=654AA321" style="width: 100rem" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    
+    <div class="three-columns-wrapper">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="text-center">
+            <h2 class="title-bg bg-default color-default">Warum Beweglichkeitszirkel wählen:</h2>
+          </div>
+          <div class="space10"></div>
+          <h3 class="display-3 text-center">Vorteile der Beweglichkeitszirkel</h3>
+          <div class="space10"></div>
+          <h4 class="display-5 text-center">Beweglichkeitszirkel haben sich auf dem Markt als Lösung für die neuen Herausforderungen an Fitnessstudios etabliert. Sie steigern die Mitgliederbindung, sorgen für Neukunden und bieten eine Vielzahl von neuen Übungen fuer Menschen die unter Schmerzen leiden.</h4>
+          <div class="space50"></div>
+        </div>
+      </div>
+      <div class="row gutter-60 text-center align-items-end">
+        
+        <div class="col-md-4">
+          <figure class="mb-30"><img src="/assets/images/concept/concept3@2x.png"  alt="Umsatz steigern und Verkäufe ankurbeln"/></figure>
+          <h4>Umsatz steigern und Verkäufe ankurbeln</h4>
+          <p class="mb-15">Unsere Beweglichkeitszirkel sind nicht nur eine Investition in die Gesundheit Ihrer Mitmenschen, sondern auch in Ihr Geschäft. Für Studioinhaber ist das die Gelegenheit, das Geschäft auf ein neues Niveau zu heben.</p>
+          <div class="text-center"><a href="#" class="more">Mehr Erfahren</a></div>
+        </div>
+        <div class="space20 d-md-none"></div>
+        
+        <div class="col-md-4">
+          <figure class="mb-30"><img src="/assets/images/concept/concept6@2x.png"  alt="Neukundengewinnung"/></figure>
+          <h4>Neukundengewinnung</h4>
+          <p class="mb-15">Steigern Sie nicht nur die Mitgliederbindung, sondern auch Ihre Mitgliederzahlen. Durch die gesteigerte Attraktivität und innovative Lösung ziehen Sie neue Mitglieder an, die bereit sind, für erstklassige Ergebnisse zu zahlen.</p>
+          <div class="text-center"><a href="#" class="more">Mehr Erfahren</a></div>
+        </div>
+        <div class="space20 d-md-none"></div>
+        
+        <div class="col-md-4">
+          <figure class="mb-30"><img src="/assets/images/concept/concept25@2x.png"  alt="Schmerzlinderung und Steigerung der Lebensqualität"/></figure>
+          <h4>Schmerzlinderung und Steigerung der Lebensqualität</h4>
+          <p class="mb-15">Bieten Sie gezielte Unterstützung bei Rücken-, Arthritis- und Gelenkschmerzen und machen Sie Ihr Studio zum Zufluchtsort für Menschen, die nach Linderung suchen.</p>
+          <div class="text-center"><a href="#" class="more">Mehr Erfahren</a></div>
+        </div>
+        <div class="space20 d-md-none"></div>
+        
+      </div>
+    </div>
+    
+    <div class="space100"></div>
+    <div class="row">
+      <div class="col-md-7 mx-auto">
+        <div class="space180"></div>
+        <h2 class="title-color color-gray text-center">Wieso SkylineCircle?</h2>
+        <h3 class="display-3 mb-0 text-center">Darum setzen immer mehr Fitnessstudios auf den SkylineCircle:</h3>
+        <div class="space50"></div>
+      </div>
+    </div>
+      <!-- /.container -->
+    
+    <div class="row align-items-center">
+      
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <figure><img src="https://skylinecircle.com/wp-content/uploads/2017/06/4-Hu%CC%88ftbeuger-2.png" alt="Wieso SkylineCircle?"/></figure>
+      </div>
+      
+      <div class="space40 d-lg-none"></div>
+      <div class="col-lg-6 pl-60 pl-md-15">
+        
+        <div data-aos="fade-up" data-aos-delay="800">
+          <h4>Vielseitigkeit und Individualität</h4>
+          <p>SkylineCircle bietet anpassbare Beweglichkeitszirkel, die sich perfekt an jedes Fitnessstudio anpassen lassen, von den Übungen bis zur Farbwahl.
+</p>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-delay="800">
+          <h4>Attraktion für Mitglieder</h4>
+          <p>Die breite Palette von Übungsmöglichkeiten zieht Mitglieder an, fördert die Engagement und steigert die Mitgliederbindung.
+</p>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-delay="800">
+          <h4>Sicherheit an erster Stelle</h4>
+          <p>Innovative Sicherheitsfunktionen und hochwertige Materialien gewährleisten sichere Trainingsumgebungen, die das Vertrauen der Mitglieder stärken.
+</p>
+        </div>
+        
+      </div>
+    </div>
+    <!--/.row -->
+    
+    
+    <div class="two-column-two">
+      <div class="space150"></div>
+      <div class="row align-items-center">
+        
+        <div class="col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="300">
+          <figure><img src="https://skylinecircle.com/wp-content/uploads/2017/06/5-Brust-1.png" alt=""/></figure>
+        </div>
+        
+        <div class="space40 d-lg-none"></div>
+        <div class="col-lg-6 pr-60 pr-md-15">
+          
+          <div data-aos="fade-up" data-aos-delay="800">
+            <h4>Nachhaltigkeit und Langlebigkeit</h4>
+            <p>Die Beweglichkeitszirkel von SkylineCircle werden aus hochwertigen, langlebigen Materialien hergestellt und sind darauf ausgelegt, jahrelang extremen Belastungen standzuhalten.
+</p>
+          </div>
+          <div class="space30"></div>
+          
+          <div data-aos="fade-up" data-aos-delay="800">
+            <h4>Hohe Qualität</h4>
+            <p>SkylineCircle bietet hohe Qualität in Design und Herstellung, was für Fitnessstudios eine langfristige und lohnende Investition bedeutet.
+</p>
+          </div>
+          <div class="space30"></div>
+          
+          <div data-aos="fade-up" data-aos-delay="800">
+            <h4>Geringer Wartungsaufwand</h4>
+            <p>Die Beweglichkeitszirkel sind nicht nur erstklassig in ihrer Konstruktion, sondern auch äußerst wartungsarm, was den Studios Zeit und Kosten erspart.
+</p>
+          </div>
+          <div class="space30"></div>
+          
+        </div>
+        <!--/column -->
+      </div>
+      <!--/.row -->
+    </div>
+    
+    
+    <div class="two-column-three">
+      <div class="space150"></div>
+      <div class="row align-items-center">
+        
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/CqVHfQ8oBm5/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/CqVHfQ8oBm5/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/CqVHfQ8oBm5/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by FISCHER FITNESS (@fischerfitness_de)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+          <!--<figure><img src="/assets/images/art/ui8.png" alt=""/></figure>-->
+        </div>
+        
+        <div class="space40 d-lg-none"></div>
+        <div class="col-lg-6 pl-60 pl-md-15">
+          
+          <div data-aos="fade-up" data-aos-delay="800">
+            <h4>Erweiterte Online-Präsenz</h4>
+            <p>Unsere maßgeschneiderten Materialien ermöglichen professionelle und ansprechende Beiträge, die potenzielle Kunden ansprechen und Ihr Studio ins Rampenlicht rücken.
+</p>
+          </div>
+          <div class="space30"></div>
+          
+          <div data-aos="fade-up" data-aos-delay="800">
+            <h4>Zielgerichtete Kundengewinnung</h4>
+            <p>Mit unserer Mitarbeiter-Schulung werden Ihre Mitarbeiter befähigt, qualifizierte Gespräche zu führen und potenzielle Kunden effektiv zu überzeugen. Dies steigert die Erfolgschancen und erleichtert den Abschluss neuer Mitgliedschaften.
+</p>
+          </div>
+          <div class="space30"></div>
+          
+          <div data-aos="fade-up" data-aos-delay="800">
+            <h4>Studiospezifische Werbematerialien</h4>
+            <p>Indem wir auf die individuellen Bedürfnisse jedes Studios eingehen, entwickeln wir maßgeschneiderte Inhalte und Marketingstrategien. Dies ermöglicht eine gezielte Ansprache der Zielgruppe.
+</p>
+          </div>
+          <div class="space30"></div>
+          
+        </div>
+        <!--/column -->
+      </div>
+      <!--/.row -->
+    </div>
+    
+  </div>
+
+
+
+
+
+<div class="wrapper light-wrapper" id="carousel">
+  <div class="container inner">
+    <h2 class="section-title text-center">Ihr Studio, Ihre Farben, Ihre Kombinationen!</h2>
+    <h3 class="text-center">Gestalten Sie Ihren Beweglichkeitszirkel nach Ihren Vorstellungen und in Ihrem Stil!</h3>
+    <p class="text-center">Klicken Sie auf die Bilder fuer die Gallerieansicht</p>
+    <div class="grid-view boxed light-gallery-wrapper text-center">
+      <div class="carousel owl-carousel gap-small" data-margin="0" data-dots="true" data-autoplay="false" data-autoplay-timeout="5000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "3"}}'>
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20191121_175944.jpg" class="lightbox"> <img src="/assets/images/zirkel/20191121_175944.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20200313_113148.jpg" class="lightbox"> <img src="/assets/images/zirkel/20200313_113148.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20200530_132005.jpg" class="lightbox"> <img src="/assets/images/zirkel/20200530_132005.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20200912_125634.jpg" class="lightbox"> <img src="/assets/images/zirkel/20200912_125634.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20210222_204422.jpg" class="lightbox"> <img src="/assets/images/zirkel/20210222_204422.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20200127_172602.jpg" class="lightbox"> <img src="/assets/images/zirkel/20200127_172602.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20200127_172757.jpg" class="lightbox"> <img src="/assets/images/zirkel/20200127_172757.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20200207_195446.jpg" class="lightbox"> <img src="/assets/images/zirkel/20200207_195446.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20200306_142051.jpg" class="lightbox"> <img src="/assets/images/zirkel/20200306_142051.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20210222_204617.jpg" class="lightbox"> <img src="/assets/images/zirkel/20210222_204617.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20210612_133327.jpg" class="lightbox"> <img src="/assets/images/zirkel/20210612_133327.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20210903_164245.jpg" class="lightbox"> <img src="/assets/images/zirkel/20210903_164245.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20220317_100520.jpg" class="lightbox"> <img src="/assets/images/zirkel/20220317_100520.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20221112_130239.jpg" class="lightbox"> <img src="/assets/images/zirkel/20221112_130239.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20230121_133120.jpg" class="lightbox"> <img src="/assets/images/zirkel/20230121_133120.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20230121_133535.jpg" class="lightbox"> <img src="/assets/images/zirkel/20230121_133535.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20230121_133551.jpg" class="lightbox"> <img src="/assets/images/zirkel/20230121_133551.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/FB_IMG_1602060762098.jpg" class="lightbox"> <img src="/assets/images/zirkel/FB_IMG_1602060762098.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/IMG-20181203-WA0003.jpg" class="lightbox"> <img src="/assets/images/zirkel/IMG-20181203-WA0003.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/IMG-20230106-WA0016.jpg" class="lightbox"> <img src="/assets/images/zirkel/IMG-20230106-WA0016.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20200912_131036.jpg" class="lightbox"> <img src="/assets/images/zirkel/20200912_131036.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20180804_134136.jpg" class="lightbox"> <img src="/assets/images/zirkel/20180804_134136.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20190817_114030.jpg" class="lightbox"> <img src="/assets/images/zirkel/20190817_114030.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20190921_141209.jpg" class="lightbox"> <img src="/assets/images/zirkel/20190921_141209.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded" style="height: 250px"><a href="/assets/images/zirkel/20200221_182916.jpg" class="lightbox"> <img src="/assets/images/zirkel/20200221_182916.jpg" alt="" /></a></figure>
+              <!-- /.post-content -->
+            </div>
+            <!--/.item-inner -->
+          </div>
+          </div>
+          <!-- /.box -->
+          
+        </div>
+        <!-- /.item -->
+      </div>
+      <!-- /.owl-carousel -->
+    </div>
+    <!-- /.grid-view -->
+  </div>
+  <!-- /.container -->
+  <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-gray-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 56.98">
+      <path d="M0,2S140.54-7.76,299,16c247,37,483-3,590-4,104-1,181,14,181,14V57H0Z" /></svg></div>
+</div>
+<!-- /.wrapper -->
+
+
+<div class="wrapper gray-wrapper">
+  <div class="container inner pb-0">
+       <h3 class="display-3 text-center">Zufriedenere Mitglieder, Erfolgreichere Fitnessstudios.</h3>
+       <h4 class="display-4 text-center">Beweglichkeitszirkel begeistern nicht nur Ihre Mitglieder, sondern heben auch Ihr Fitnessstudio von der Konkurrenz ab.</h4>
+    <div class="row align-items-center">
+      <div class="col-md-6 col-lg-6 d-none d-md-flex">
+        <figure><img src="/assets/images/testimonial1.png" alt="" width="600px"></figure>
+      </div>
+      <!--/column -->
+      <div class="col-md-7 col-lg-6 pl-60 pl-md-15">
+        <div class="gap-small" data-margin="30">
+          <div class="item">
+            <blockquote class="icon icon-left larger text-left">
+              <p>"Seitdem ich nun schon über 2 Jahre lang regelmäßig mit dem SkylineCircle trainiere, erledige ich die Arbeiten in meinem weitläufigen Garten mühelos. Mein Rücken hat sich seitdem nicht mehr beschwert. Insgesamt trainiere ich bereits seit über 8 Jahren und jede Woche freue ich mich aufs Neue darauf, meine Beweglichkeit weiter zu verbessern."</p>
+              <div class="blockquote-details">
+                <div class="info p-0">
+                  <h6 class="mb-0">Maria B.</h6>
+                  <span class="meta mb-0">74 Jahre jung</span>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- /.item -->
+        </div>
+        <!-- /.owl-carousel -->
+        <div class="space20 d-lg-none"></div>
+        <div class="space60 d-md-none"></div>
+      </div>
+      <!--/column -->
+    </div>
+    <!--/.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+
+
+
+  
+  <div class="video-area">
+    <div class="wrapper image-wrapper bg-image gradient-overlay inverse-text" data-image-src="https://skylinecircle.com/wp-content/uploads/slider/cache/ee8b65b0800e42be0fedcd6f326ef06d/20210222_204422.jpg">
+      <div class="container inner pt-140 pb-140 text-center">
+        <div class="row">
+          <div class="col-md-7 mx-auto">
+            <h2 class="title-bg bg-white color-dark">How We Do It?</h2>
+            <div class="space10"></div>
+            <h3 class="display-3">Find out everything you need to know about creating a business process model.</h3>
+            <div class="space10"></div>
+            <div class="light-gallery-wrapper">
+              <a href="https://www.youtube.com/watch?v=26TbMXXOe0I" class="btn-play lightbox"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="wrapper white-wrapper inner pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 mx-auto">
+          <div class="text-center">
+            <h2 class="title-bg bg-default color-default">
+              Zufriedene Kunden
+            </h2>
+          </div>
+          <div class="space10"></div>
+          <h3 class="display-3 text-center">
+            Kundenzufriedenheit ist unser Hauptziel. Erfahren Sie, was unsere vielen Kunden über uns sagen.
+          </h3>
+          <div class="space40"></div>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        
+        <div class="col-lg-6 pr-60 pr-md-15">
+          <figure class="img-blob blob8"><img src="https://scontent-ord5-1.xx.fbcdn.net/v/t1.6435-9/43880546_980494252158150_1962276407564304384_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a26aad&_nc_ohc=ojNfpHoS9pMAX9knRip&_nc_ht=scontent-ord5-1.xx&oh=00_AfC9C9h2f_ac5VRdS7amQ9FqA7yVJn3rSq_0-PPF3Cr_dA&oe=654982FA"  alt="Zufriedene Kunden" style="width: 30rem"/></figure>
+        </div>
+        
+        <div class="space20 d-md-none"></div>
+        <div class="space50 d-none d-md-block d-lg-none"></div>
+        <div class="col-lg-5">
+          <div class="basic-slider owl-carousel gap-small dots-left" data-margin="30">
+            
+            <div class="item">
+              <blockquote class="icon icon-left larger text-left">
+                <p>"Top Unternehmen, tolles Material und super Mitarbeiter. Jederzeit gerne wieder!"
+</p>
+                <div class="blockquote-details">
+                  <div class="info p-0">
+                    <h6 class="mb-0">Stefan Polzer</h6>
+                    <span class="meta mb-0">Physiotherapeut</span>
+                  </div>
+                </div>
+              </blockquote>
+            </div>
+            
+            <div class="item">
+              <blockquote class="icon icon-left larger text-left">
+                <p>"Gute Geräte zu fairen Preisen, guter Service von Alexander."
+</p>
+                <div class="blockquote-details">
+                  <div class="info p-0">
+                    <h6 class="mb-0">Ingo Breuer</h6>
+                    <span class="meta mb-0">Fitnessstudioinhaber</span>
+                  </div>
+                </div>
+              </blockquote>
+            </div>
+            
+            <div class="item">
+              <blockquote class="icon icon-left larger text-left">
+                <p>"Die Ergebnisse sprechen für sich. Danke Alexander, für diese innovative Lösung."
+</p>
+                <div class="blockquote-details">
+                  <div class="info p-0">
+                    <h6 class="mb-0">Erwin F</h6>
+                    <span class="meta mb-0">Steuerberater</span>
+                  </div>
+                </div>
+              </blockquote>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="space80"></div>
+      <div class="carousel owl-carousel clients" data-margin="30" data-loop="true" data-dots="false" data-autoplay="true" data-autoplay-timeout="3000" data-responsive='{"0":{"items": "2"}, "768":{"items": "4"}, "992":{"items": "5"}, "1140":{"items": "6"}}'>
+  
+  <div class="item pl-15 pr-15">
+  	<img src="/assets/images/clients/fischerfitness.png" alt="/assets/images/clients/fischerfitness.png"/>
+  </div>
+  
+  <div class="item pl-15 pr-15">
+  	<img src="/assets/images/clients/injoy_logo.png" alt="/assets/images/clients/injoy_logo.png"/>
+  </div>
+  
+  <div class="item pl-15 pr-15">
+  	<img src="/assets/images/clients/OSP-Brandenburg-Logo_png.png" alt="/assets/images/clients/OSP-Brandenburg-Logo_png.png"/>
+  </div>
+  
+  <div class="item pl-15 pr-15">
+  	<img src="/assets/images/clients/viva.png" alt="/assets/images/clients/viva.png"/>
+  </div>
+  
+</div>
+      
+      <div class="space80"></div>
+    </div>
+  <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 20.98">
+      <path d="M0,0V21H1070V0A6830.24,6830.24,0,0,1,0,0Z" /></svg></div>
+  </div>
+  
+
+
+  <div class="wrapper light-wrapper">
+    <div class="container inner">
+      
+      
+      <div class="row">
+        <div class="col-lg-5 pr-50 pr-md-15">
+          <h2 class="title-color color-gray">Preisgestaltung</h2>
+          <h3 class="display-3">Unsere Beweglichkeitszirkel sind erschwinglich und bieten gleichzeitig erstklassige Qualität und umfassende Unterstützung.</h3>
+          <div class="space20"></div>
+          <p>In unserer transparenten Preisgestaltung finden Sie klare Optionen, die sich an die Bedürfnisse Ihres Studios anpassen. Wir bieten flexible Pakete, damit Sie genau das erhalten, was Sie benötigen – ohne versteckte Kosten. Kontaktieren Sie uns, um mehr über unsere fairen Preise und die großartigen Möglichkeiten für Ihr Studio zu erfahren. Investieren Sie in die Zukunft Ihres Fitnessgeschäfts mit SkylineCircle!
+</p>
+          <div class="space10"></div>
+          
+        </div>
+        <!--/column -->
+        <div class="space70 d-none d-md-block d-lg-none"></div>
+        <div class="space20 d-md-none"></div>
+        <div class="col-lg-7">
+          <div class="pricing-wrapper">
+            <div class="row no-gutters">
+              
+              <div class="col-md-6">
+                <div class="pricing panel box bg-white shadow">
+                  <div class="panel-heading">
+                    <div class="prices color-dark">
+                      <div class="price price-show">ab <span class="price-currency">&euro;</span><span class="price-value">119</span> <span class="price-duration">mtl.</span></div>
+                    </div>
+                    <h4 class="panel-title mb-0">6 Geräte</h4>
+                  </div>
+                  <div class="panel-body">
+                    <table class="table">
+                      
+                      <tr>
+                        <td>Hüftbeuger</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>Brust</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>Hüfte/Bauch/Brust</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>Gluteus</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>Rücken</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>Spagat</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>&nbsp;</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>&nbsp;</td>
+                      </tr>
+                      
+                    </table>
+                  </div>
+                  <div class="panel-footer"><a href="#" class="btn" role="button">Preis anfragen</a></div>
+                </div>
+              </div>
+              
+              <div class="col-md-6">
+                <div class="pricing panel box bg-white shadow">
+                  <div class="panel-heading">
+                    <div class="prices color-dark">
+                      <div class="price price-show">ab <span class="price-currency">&euro;</span><span class="price-value">149</span> <span class="price-duration">mtl.</span></div>
+                    </div>
+                    <h4 class="panel-title mb-0">8 Geräte</h4>
+                  </div>
+                  <div class="panel-body">
+                    <table class="table">
+                      
+                      <tr>
+                        <td>Hüftbeuger</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>Brust</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>Hüfte/Bauch/Brust</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>Gluteus</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>Rücken</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>Spagat</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>Waden</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>Nacken/Trapezius</td>
+                      </tr>
+                      
+                    </table>
+                  </div>
+                  <div class="panel-footer"><a href="#" class="btn" role="button">Preis anfragen</a></div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="wrapper light-wrapper inner-bottom">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-lg-8" style="margin: 0 auto">
+          <figure class="img-blob blob4">
+            <img src="/assets/images/faq.jpg"  alt="Häufig gestellte Fragen"  style="width: 50rem"/>
+          </figure>
+        </div>
+        
+      </div>
+      <div class="space100"></div>
+      <div class="row">
+        <div class="space50 d-none d-md-block d-lg-none"></div>
+        <div class="space10 d-md-none"></div>
+        <div class="col-lg-12 pl-60 pl-md-15">
+          <h2 class="title-bg bg-default color-default">Häufig gestellte Fragen</h2>
+          <div class="space10"></div>
+          <h3 class="display-3">Wenn Sie keine Antwort auf Ihre Frage finden, zögern Sie nicht, uns eine E-Mail zu senden.</h3>
+          <div class="space20"></div>
+          <div id="accordion-2" class="accordion-wrapper simple">
+            
+            <div class="card">
+              <div class="card-header" id="accordion-heading-2-1">
+                <h5>
+                  <button class="collapsed" data-toggle="collapse" data-target="#accordion-collapse-2-1" aria-expanded="false" aria-controls="accordion-collapse-2-1">
+                    Wie erfolgt die Installation der Beweglichkeitszirkel von SkylineCircle in meinem Fitnessstudio?
+                  </button>
+                </h5>
+              </div>
+              <div id="accordion-collapse-2-1" class="collapse" aria-labelledby="accordion-heading-2-1" data-target="#accordion-2" data-parent="#accordion-2">
+                <div class="card-body">
+                  <p>
+                    Unsere Beweglichkeitszirkel werden von erfahrenen Technikern professionell installiert, um sicherzustellen, dass sie optimal funktionieren und allen Sicherheitsstandards entsprechen.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header" id="accordion-heading-2-1">
+                <h5>
+                  <button class="collapsed" data-toggle="collapse" data-target="#accordion-collapse-2-2" aria-expanded="false" aria-controls="accordion-collapse-2-1">
+                    Welche Arten von Wartung sind erforderlich und wie oft müssen die Geräte gewartet werden?
+                  </button>
+                </h5>
+              </div>
+              <div id="accordion-collapse-2-2" class="collapse" aria-labelledby="accordion-heading-2-2" data-target="#accordion-2" data-parent="#accordion-2">
+                <div class="card-body">
+                  <p>
+                    Die Beweglichkeitszirkel von SkylineCircle sind darauf ausgelegt, wartungsarm zu sein. Wir empfehlen dennoch regelmäßige Überprüfungen durch Servicepersonal, um die maximale Lebensdauer und Funktionalität sicherzustellen.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header" id="accordion-heading-2-1">
+                <h5>
+                  <button class="collapsed" data-toggle="collapse" data-target="#accordion-collapse-2-3" aria-expanded="false" aria-controls="accordion-collapse-2-1">
+                    Welche Übungen können mit den Beweglichkeitszirkeln durchgeführt werden und wie vielseitig sind sie?
+                  </button>
+                </h5>
+              </div>
+              <div id="accordion-collapse-2-3" class="collapse" aria-labelledby="accordion-heading-2-3" data-target="#accordion-2" data-parent="#accordion-2">
+                <div class="card-body">
+                  <p>
+                    Unsere Beweglichkeitszirkel bieten eine breite Palette von Übungsmöglichkeiten, von Kraft- und Ausdauertraining bis hin zu Flexibilitätsübungen. Sie sind so konzipiert, dass sie alle Fitnessniveaus und Trainingsziele abdecken.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header" id="accordion-heading-2-1">
+                <h5>
+                  <button class="collapsed" data-toggle="collapse" data-target="#accordion-collapse-2-4" aria-expanded="false" aria-controls="accordion-collapse-2-1">
+                    Kann die Ausstattung an die Farben und das Design an mein Fitnessstudio angepasst werden?
+                  </button>
+                </h5>
+              </div>
+              <div id="accordion-collapse-2-4" class="collapse" aria-labelledby="accordion-heading-2-4" data-target="#accordion-2" data-parent="#accordion-2">
+                <div class="card-body">
+                  <p>
+                    Ja, bei SkylineCircle legen wir großen Wert auf Individualität. Unsere Beweglichkeitszirkel können in verschiedenen Farben und Designs angepasst werden, um perfekt zu Ihrem Studio zu passen.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header" id="accordion-heading-2-1">
+                <h5>
+                  <button class="collapsed" data-toggle="collapse" data-target="#accordion-collapse-2-5" aria-expanded="false" aria-controls="accordion-collapse-2-1">
+                    Wie werden die Beweglichkeitszirkel von den Mitgliedern aufgenommen?
+                  </button>
+                </h5>
+              </div>
+              <div id="accordion-collapse-2-5" class="collapse" aria-labelledby="accordion-heading-2-5" data-target="#accordion-2" data-parent="#accordion-2">
+                <div class="card-body">
+                  <p>
+                    Unsere Beweglichkeitszirkel sind bei Mitgliedern äußerst beliebt. Sie bieten nicht nur einzigartige Übungen, sondern fördern auch die Mitgliederbindung und steigern die Zufriedenheit der Nutzer durch vielseitige Trainingsmöglichkeiten.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-header" id="accordion-heading-2-1">
+                <h5>
+                  <button class="collapsed" data-toggle="collapse" data-target="#accordion-collapse-2-6" aria-expanded="false" aria-controls="accordion-collapse-2-1">
+                    Welche Art von Support und Schulungen bietet SkylineCircle für Fitnessstudios an?
+                  </button>
+                </h5>
+              </div>
+              <div id="accordion-collapse-2-6" class="collapse" aria-labelledby="accordion-heading-2-6" data-target="#accordion-2" data-parent="#accordion-2">
+                <div class="card-body">
+                  <p>
+                    SkylineCircle bietet umfassende Unterstützung, einschließlich Mitarbeiterschulungen und Marketingmaterialien. Wir stehen Ihnen während des gesamten Prozesses zur Seite, um sicherzustellen, dass Ihr Fitnessstudio optimal von unseren Beweglichkeitszirkeln profitiert.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <!-- /.accordion-wrapper -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="wrapper light-wrapper image-wrapper bg-full bg-image" data-image-src="/assets/images/art/bg5.jpg">
+  <div class="container inner mb-100">
+    <div class="space30"></div>
+    <div class="box shadow p-60 inverse-text rounded d-md-flex align-items-md-center justify-content-md-between">
+    <div>
+          <h3 class="display-3">Steigern Sie Ihr Fitnesseinnahmen mit Skyline Beweglichkeitszirkel</h3>
+      <p>Bereit, Ihr Fitnessstudio auf ein neues Niveau zu heben? Fordern Sie jetzt unverbindlich unsere Preisinformationen an und entdecken Sie, wie erschwinglich die Zukunft des Fitness für Ihr Business sein kann. Nehmen Sie den ersten Schritt zu höheren Gewinnen und zufriedenen Mitgliedern.</p>
+      <p>Schließen Sie sich den vielen erfolgreichen Fitnessstudios an, die bereits auf Skyline Beweglichkeitszirkel setzen.</p>
+
+    </div>
+      <div class="space30 d-md-none"></div>
+      <a href="#" class="btn btn-white btn-strong-hover mb-0 ml-20">Preise anfragen &raquo;</a>
+    </div>
+    <!--/.box -->
+  </div>
+  <!-- /.container -->
+  <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-footer-dark-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 39.07">
+      <path d="M1070,39.07H0V21a6818.1,6818.1,0,0,1,1070,0Z" /></svg></div>
+</div>
+<!-- /.wrapper -->
+
+<footer class=" dark-wrapper inverse-text ">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-md-4 col-lg-3">
+        <div class="widget">
+         <a href="">
+          
+            <img src="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png" srcset="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png 1x, /assets/images/logo-light@2x.png 2x" alt="Skyline Circle"/>
+            
+         </a>
+          <div class="space40"></div>
+          <p>© 2023 SkylineCircle.</p>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="col-md-4 col-lg-3">
+        <div class="widget">
+          <h3 class="widget-title">Kontakt aufnehmen</h3>
+          
+           <address>Skyline GmbH<br />Alexander Flaming<br />Drosselweg 13<br />49661 Cloppenburg</address>
+          
+           <a href="mailto:info@skylinecircle.com">info@skylinecircle.com</a><br />
+          04471 900 93 70
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="col-md-4 col-lg-3">
+        
+        <div class="widget">
+          
+           <h5 class="widget-title">Mehr Erfahren</h5>
+          
+          <ul class="list-unstyled mb-0">
+            
+            <li><a href="">Über uns</a></li>
+            
+            <li><a href="">Unsere Geschichte</a></li>
+            
+            <li><a href="">Preise</a></li>
+            
+            <li><a href="">Funktionen</a></li>
+            
+          </ul>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="space30 d-none d-md-block d-lg-none"></div>
+      <div class="col-md-12 col-lg-3">
+        <div class="widget">
+          
+           <h3 class="widget-title">Our Newsletter</h3>
+          
+          
+           <p>Subscribe to our newsletter to get our news & deals delivered to your inbox!</p>
+          
+          <div class="space10"></div>
+          <div class="newsletter-wrapper">
+            <form action="https://formsubmit.io/send/info@skylinecircle.com" target="_blank">
+              <div id="mc_embed_signup_scroll" class="input-group">
+                <input type="email"  name="user_email" class="email form-control mb-0 mr-2 mb-sm-0"  placeholder="Email Address" required>
+                <button type="submit" class="btn btn-rounded btn-default mr-0 mb-0 pull-right">
+                Join
+               </button>
+              </div>
+            </form>
+          </div>
+          <!-- /.newsletter-wrapper -->
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!--/.row -->
+  </div>
+  <!-- /.container -->
+</footer>
+
+
+  </div>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+  <script src="/assets/js/plugins.js"></script>
+  <script src="/assets/js/simple-jekyll-search.min.js"></script>
+  <script src="/assets/js/scripts.js"></script>
+</body>
+</html>

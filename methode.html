@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="/assets/images/favicon.png"/>
+  <title> Das Skyline Ruecken- und Gelenkkonzept </title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/plugins.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/settings.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/layers.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/navigation.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/type/type.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
+  <!--page wise css-->
+  
+  <!--/.page wise css-->
+  
+</head>
+<body >
+  <div class="content-wrapper">
+    
+
+
+
+
+<nav
+  class="navbar  absolute transparent nav-uppercase  navbar-hover-opacity navbar-expand-lg">
+  <div
+    class=" container  flex-row justify-content-center">
+    <div class="navbar-brand">
+      <a href="http://localhost:4000">
+        
+        <img src="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png"
+          srcset="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png 1x, /assets/images/logo-light@2x.png 2x"
+          class=" logo-light "
+          alt="Skyline Circle" style="max-height: 50px" />
+        
+        <img src="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png"
+          srcset="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png 1x, /assets/images/logo@2x.png 2x"
+          class=" logo-dark  "
+          alt="Skyline Circle" style="max-height: 50px" />
+      </a>
+    </div>
+    <div class="navbar-other ml-auto order-lg-3">
+      <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+        <li class="nav-item">
+          <div class="navbar-hamburger d-lg-none d-xl-none ml-auto">
+            <button class="hamburger animate plain" data-toggle="offcanvas-nav"><span></span></button>
+          </div>
+        </li>
+        
+        <li class="dropdown search-dropdown position-static nav-item">
+          <a href="#" role="button" class="collapse-toggle" data-toggle="collapse" data-target=".search-dropdown-menu"
+            aria-haspopup="true" aria-expanded="false"><i class="jam jam-search"></i></a>
+          <div class="dropdown-menu search-dropdown-menu w-100 collapse">
+            <div class="form-wrapper">
+              <form class="inverse-text">
+                <input type="text" id="search-input" class="form-control" placeholder="Search blog posts.." />
+                <i class="dropdown-close jam jam-close"></i>
+              </form>
+              <!-- /.search-form -->
+            </div>
+            <!-- /.form-wrapper -->
+            <ul id="results-container" class="position-static"></ul>
+          </div>
+        </li>
+        <li class="nav-item"><button class="plain" data-toggle="offcanvas-info"><i class="jam jam-info"></i></button>
+        </li>
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-other -->
+    <div class="navbar-collapse offcanvas-nav">
+      <div class="offcanvas-header d-lg-none d-xl-none">
+        <a href="http://localhost:4000">
+          <img src="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png"
+            srcset="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png 1x, /assets/images/logo-light@2x.png 2x"
+            alt="Skyline Circle" /></a>
+        <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
+      </div>
+      <ul class="navbar-nav  mx-auto ">
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/">Home</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/beweglichkeitszirkel">SkylineCircle</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/faszientower">Faszientower</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/all-in-1">All in 1</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/moby">Moby</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/skylinefoot">SkylineFoot</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/methode">Methode</a>
+            
+            
+        </li>
+        
+        
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!-- /.navbar -->
+<div class="offcanvas-info inverse-text">
+  <button class="plain offcanvas-close offcanvas-info-close"><i class="jam jam-close"></i></button>
+  <a href="http://localhost:4000">
+    <img src="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png"
+      srcset="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png 1x, /assets/images/logo-light@2x.png 2x"
+      class=" logo-light "
+      alt="Skyline Circle" />
+  </a>
+  <div class="space30"></div>
+  <p>Skyline ist ein Familienunternehmen aus Niedersachsen, das sich auf die Produktion von Beweglichkeitszirkeln spezialisiert hat. Unsere hochwertigen Zirkel sind für Fitnessstudios, Physiopraxen, Hotels, Unternehmen und auch für zu Hause geeignet.</p>
+  <div class="space20"></div>
+  <div class="widget">
+    <h5 class="widget-title">Contact Info</h5>
+    <address> Skyline GmbH<br />Alexander Flaming<br />Drosselweg 13<br />49661 Cloppenburg<div class="space20"></div>
+      <a href="mailto:info@skylinecircle.com" class="nocolor"></a><br />
+      04471 900 93 70
+    </address>
+  </div>
+  <!-- /.widget -->
+  <div class="widget">
+    
+    <h3 class="widget-title">Mehr Erfahren</h3>
+    
+    <ul class="list-unstyled">
+      
+      <li><a href="about.html" class="nocolor">Über uns</a></li>
+      
+      <li><a href="about.html" class="nocolor">Unsere Geschichte</a></li>
+      
+      <li><a href="#" class="nocolor">Preise</a></li>
+      
+      <li><a href="#" class="nocolor">Funktionen</a></li>
+      
+    </ul>
+  </div>
+  <!-- /.widget -->
+  <div class="widget">
+    
+    <h3 class="widget-title">Folge uns</h3>
+    
+    <ul class="social social-mute social-s ml-auto">
+      
+      <li><a href="https://www.facebook.com/profile.php?id=100063806130122/"><i class="jam jam-facebook"></i></a></li>
+      
+      <li><a href="https://www.instagram.com/skyline_circle/"><i class="jam jam-instagram"></i></a></li>
+      
+      <li><a href="https://www.youtube.com/@skylinecircle4995/"><i class="jam jam-youtube"></i></a></li>
+      
+    </ul>
+  </div>
+  <!-- /.widget -->
+</div>
+<!-- /.offcanvas-info -->
+
+
+<!--about us wrapper-->
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+  <div class="space70"></div>
+    <div class="row">
+      <div class="col-md-11 mx-auto">
+          <h2 class="section-title larger text-center">Das Skyline Ruecken- und Gelenkkonzept</h2>
+          <h3 class="display-4 text-center">Innovatives Beweglichkeits-Training für nachhaltige Verbesserungen im Rücken- und Gelenkbereich.</h3>
+      </div>
+    </div>
+   
+   
+   <!--/.row -->
+   <div class="space120"></div>
+   <div class="row align-items-center">
+     
+     <div class="col-lg-6 order-lg-1">
+       <div class="img-blob blob15">
+         <img src="/assets/images/zirkel/76706663_1266296526911253_7420021496690507776_n.jpg" style="width: 30rem" alt="Revolutionäre Wege zu einem schmerzfreien Leben"/>
+       </div>
+     </div>
+     
+     <div class="space30 d-none d-md-block d-lg-none"></div>
+     <div class="col-lg-6 pr-60 pr-md-15">
+       <h3>Revolutionäre Wege zu einem schmerzfreien Leben</h3>
+       <div class="space10"></div>
+       <p>Das Skyline Gesundheitskonzept ist nicht nur ein Beweglichkeitszirkel; es ist eine innovative Lösung, um den typischen Rücken- und Gelenkbeschwerden entgegenzuwirken und gleichzeitig die allgemeine Fitness zu steigern. Dieser Beweglichkeitszirkel, der aus gezieltem Längentraining des Muskel- und Fasziensystems besteht, hat sich als äußerst effektiv erwiesen. Aber wie genau wirkt das Skyline Gesundheitskonzept auf den gesamten Bewegungsapparat?
+</p>
+     </div>
+     <!--/column -->
+   </div>
+   <!--/.row -->
+   
+   
+   <!--/.row -->
+   <div class="space120"></div>
+   <div class="row align-items-center">
+     
+     <div class="col-lg-6 order-lg-0">
+       <div class="img-blob blob15">
+         <img src="/assets/images/zirkel/52013951_1055225438018364_2464039861749809152_n.jpg" style="width: 30rem" alt="Harmonie im Bewegungsapparat: Eine komplexe Struktur"/>
+       </div>
+     </div>
+     
+     <div class="space30 d-none d-md-block d-lg-none"></div>
+     <div class="col-lg-6 pr-60 pr-md-15">
+       <h3>Harmonie im Bewegungsapparat: Eine komplexe Struktur</h3>
+       <div class="space10"></div>
+       <p>Unser Bewegungsapparat ist eine komplexe Struktur, in der Knochen, Muskeln, Gelenke und Bänder zusammenarbeiten. Diese Systeme sind harmonisch aufeinander abgestimmt und sollten reibungslos funktionieren. Wenn ein Teil dieses Systems gestört ist, kann es den gesamten Bewegungsapparat beeinträchtigen. Das kleinste Element dieser Struktur ist die biokinematische Bewegungseinheit, die aus Knochen, Gelenken, Bändern und Muskeln besteht. Diese Einheit ist anfällig für Störungen, die sich nicht nur auf die muskuläre Ebene auswirken, sondern auch biochemische Veränderungen in Gelenken und Bändern auslösen können.
+</p>
+     </div>
+     <!--/column -->
+   </div>
+   <!--/.row -->
+   
+   
+   <!--/.row -->
+   <div class="space120"></div>
+   <div class="row align-items-center">
+     
+     <div class="col-lg-6 order-lg-1">
+       <div class="img-blob blob15">
+         <img src="/assets/images/zirkel/21125757_747525398788371_817795814405123541_o.jpg" style="width: 30rem" alt="Die Wirkung des Skyline Gesundheitskonzepts: Gezieltes Training für nachhaltige Verbesserungen"/>
+       </div>
+     </div>
+     
+     <div class="space30 d-none d-md-block d-lg-none"></div>
+     <div class="col-lg-6 pr-60 pr-md-15">
+       <h3>Die Wirkung des Skyline Gesundheitskonzepts: Gezieltes Training für nachhaltige Verbesserungen</h3>
+       <div class="space10"></div>
+       <p>Der Beweglichkeitszirkel von Skyline wirkt gezielt auf diese biokinematischen Bewegungseinheiten. Durch spezifisches Training des Muskel- und Fasziensystems hilft er nicht nur, Schmerzen zu lindern, sondern auch die Gesamtleistungsfähigkeit des Bewegungsapparats zu verbessern. Dieses Training führt zu einer Normalisierung des komplexen Zusammenspiels zwischen Muskeln, Gelenken und Bändern, wodurch nicht nur Symptome behandelt werden, sondern auch die Ursachen von Rücken- und Gelenkbeschwerden angegangen werden.
+</p>
+     </div>
+     <!--/column -->
+   </div>
+   <!--/.row -->
+   
+  </div>
+</div>
+
+<!---/.about us wrapper-->
+
+<!-- progress area wrapper-->
+
+<div class="progress-area">
+  <div class="wrapper image-wrapper bg-image inverse-text" data-image-src="/assets/images/art/bg5.jpg">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        
+         <h2 class="title-color color-white text-center">Rückenprobleme in Deutschland: Eine Tiefe Analyse in Zahlen</h2>
+        
+        <div class="space20"></div>
+        <div class="row text-center">
+          
+          <div class="col-md-6 col-lg-3">
+            <div class="progressbar circle red" data-value="67"></div>
+            <h5>Rückenschmerzen</h5>
+            <p>Der Anteil der deutschen Bevölkerung, der innerhalb eines Jahres unter Rückenschmerzen leidet.</p>
+          </div>
+          
+          <div class="col-md-6 col-lg-3">
+            <div class="progressbar circle red" data-value="20"></div>
+            <h5>Chronische Rückenschmerzen</h5>
+            <p>Der Anteil der Menschen in Deutschland, die chronische Rückenschmerzen haben, die drei Monate oder länger anhalten.</p>
+          </div>
+          
+          <div class="col-md-6 col-lg-3">
+            <div class="progressbar circle yellow" data-value="14"></div>
+            <h5>Eingeschränkte Lebenszeit</h5>
+            <p>Der Anteil der in Einschränkung verbrachten Lebenszeit (YLD) in Deutschland aufgrund von Schmerzen im unteren Rücken.</p>
+          </div>
+          
+          <div class="col-md-6 col-lg-3">
+            <div class="progressbar circle orange" data-value="6.1"></div>
+            <h5>Arbeitsunfähigkeitsfälle</h5>
+            <p>Der Anteil der Arbeitsunfähigkeitsfälle und -tage aufgrund von Rückenschmerzen unter erwerbstätigen Versicherten im Jahr 2017.</p>
+          </div>
+          
+        </div>
+        <!-- /.row -->
+        <p class="text-center">Quelle: <a href="https://www.rki.de/DE/Content/Gesundheitsmonitoring/Gesundheitsberichterstattung/GBEDownloadsJ/JoHM_S3_2021_Rueckenschmerz_Nackenschmerz.pdf?__blob=publicationFile" target="_blank">Prävalenz von Rücken- und Nackenschmerzen in Deutschland. Ergebnisse der Krankheitslast-Studie BURDEN 2020</a></p>
+      </div>
+      <!-- /column -->
+    </div>
+  </div>
+</div>
+</div>
+
+<!--/.progress area wrapper-->
+
+<div class="wrapper gray-wrapper">
+  <div class="container inner text-center">
+    
+     <h2 class="section-title">Unser Fortschritt</h2>
+    
+    
+     <p class="lead larger">Usere Fortschritte im Kampf gegen Rückenschmerzen:</p>
+    
+    <div class="space30"></div>
+    <div class="row gutter-60 d-flex align-items-center">
+      <div class="col-md-6 col-lg-3 order-lg-1">
+        
+        <h4>1. Flächendeckende Präsenz in Deutschland</h4>
+        <p class="mb-40">Unsere Beweglichkeitszirkel sind deutschlandweit zugänglich. Von Städten bis ländlichen Gebieten bieten wir effektive Lösungen zur Schmerzlinderung für jeden.</p>
+        
+        <h4>2. Wissenschaftlich fundierte Ansätze</h4>
+        <p class="mb-40">Unsere Programme basieren auf aktuellster Forschung und sind individuell angepasst. Durch kontinuierliche Integration von neuen Erkenntnissen bieten wir den bestmöglichen Nutzen.</p>
+        
+      </div>
+      <!--/column -->
+      
+      <div class="col-lg-6 order-sm-first order-lg-2">
+        <figure class="img-blob blob5"><img style="width: 100%" src="/assets/images/map.png" alt="Unser Fortschritt"/></figure>
+        <div class="space50 d-none d-md-block d-lg-none"></div>
+      </div>
+      <!--/column -->
+      
+      <div class="col-md-6 col-lg-3 order-lg-3">
+        
+        
+        
+        
+        
+        
+        <h4>3. Individuelle Anpassungen</h4>
+        <p class="mb-40">Jeder Körper ist einzigartig. Erfahrene Trainer können Übungen individuell anpassen, um den Fortschritt und das Wohlbefinden von Kunden zu maximieren.</p>
+        
+        
+        
+        <h4>4. Aufklärung und Prävention</h4>
+        <p class="mb-40">Neben der Behandlung betonen wir Prävention. Durch Aufklärung fördern wir gesunde Bewegung und helfen dabei, Rückenschmerzen vorzubeugen.</p>
+        
+        
+      </div>
+      <!--/column -->
+    </div>
+    <!--/.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+
+
+<div class="wrapper image-wrapper bg-image gradient-overlay inverse-text" data-image-src="/assets/images/art/bg5.jpg">
+  <div class="container inner pb-0">
+  <h3 class="display-3">Unser Ziel ist dauerhafte Schmerzlinderung und verbesserte Lebensqualität.</h3>
+    <div class="row align-items-center">
+      <div class="col-md-6 col-lg-6 d-none d-md-flex mb-50">
+        <figure><img src="/assets/images/testimonial1.png" alt="" width="600px"></figure>
+      </div>
+      <!--/column -->
+      <div class="col-md-7 col-lg-6 pl-60 pl-md-15">
+        <div class="gap-small" data-margin="30">
+          <div class="item">
+            <blockquote class="icon icon-left larger text-left">
+              <p>"Seitdem ich nun schon über 2 Jahre lang regelmäßig mit dem SkylineCircle trainiere, erledige ich die Arbeiten in meinem weitläufigen Garten mühelos. Mein Rücken hat sich seitdem nicht mehr beschwert. Insgesamt trainiere ich bereits seit über 8 Jahren und jede Woche freue ich mich aufs Neue darauf, meine Beweglichkeit weiter zu verbessern."</p>
+              <div class="blockquote-details">
+                <div class="info p-0">
+                  <h6 class="mb-0">Maria B.</h6>
+                  <span class="meta mb-0">74 Jahre jung</span>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- /.item -->
+        </div>
+        <!-- /.owl-carousel -->
+        <div class="space20 d-lg-none"></div>
+        <div class="space60 d-md-none"></div>
+      </div>
+      <!--/column -->
+    </div>
+    <!--/.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+
+<!--subscribe wrapper-->
+
+<div class="wrapper white-wrapper">
+  <div class="container inner">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <figure><img src="#" srcset="/assets/images/mail.jpg 1x, /assets/images/mail.jpg 2x" alt=""></figure>
+      </div>
+      <!--/column -->
+      <div class="space20 d-md-none"></div>
+      <div class="space50 d-none d-md-block d-lg-none"></div>
+      <div class="col-lg-6 pl-60 pl-md-15">
+        <h3 class="display-2">Werden auch Sie Teil unserer wachsenden Community</h3>
+        <p>Melden Sie sich jetzt an, um regelmäßig Updates, Tipps und Tricks sowie Einladungen zu exklusiven Events zu erhalten. Seien Sie Teil unserer wachsenden Community, die sich für ein gesundes, schmerzfreies Leben engagiert.</p>
+        <div class="space30"></div>
+        <div class="row">
+          <div class="col-md-9">
+            <div class="newsletter-wrapper">
+              <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+                <div id="mc_embed_signup_scroll" class="input-group">
+                  <input type="email" value="" name="EMAIL" class="email form-control mb-10" id="mce-EMAIL" placeholder="Email Adresse" required="" style="min-width: 120px; width: 100%">
+                  <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-rounded btn-default mr-0 mb-0 pull-right">Newsletter abonnieren &raquo;</button>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_ddc180777a163e0f9f66ee014_056957de28" tabindex="-1" value="">
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </form>
+            </div>
+            <!-- /.newsletter-wrapper -->
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!--/column -->
+    </div>
+    <!--/.row -->
+  </div>
+  <!-- /.container -->
+</div>
+
+<!--/.subscribe wrapper-->
+
+
+<footer class=" dark-wrapper inverse-text ">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-md-12 col-lg-3 text-center text-lg-left">
+        <div class="widget"> 
+          
+            <img src="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png" srcset="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png 1x, /assets/images/logo-light@2x.png 2x" alt="Skyline Circle"/>
+            
+          
+          <div class="space20"></div>
+          <p>Skyline ist ein Familienunternehmen aus Niedersachsen, das sich auf die Produktion von Beweglichkeitszirkeln spezialisiert hat. Unsere hochwertigen Zirkel sind für Fitnessstudios, Physiopraxen, Hotels, Unternehmen und auch für zu Hause geeignet.</p>
+          
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="space30 d-lg-none d-xl-none"></div>
+      <div class="col-6 col-md-3 col-lg-2 offset-lg-1">
+        
+        <div class="widget">
+          
+           <h5 class="widget-title">Need Help?</h5>
+          
+          <ul class="list-unstyled mb-0">
+            
+            <li><a href="#">Support</a></li>
+            
+            <li><a href="#">Get Started</a></li>
+            
+            <li><a href="#">Contact Us</a></li>
+            
+            <li><a href="#">Terms of Use</a></li>
+            
+            <li><a href="#">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="col-6 col-md-3 col-lg-2">
+        
+        <div class="widget">
+          
+           <h5 class="widget-title">Mehr Erfahren</h5>
+          
+          <ul class="list-unstyled mb-0">
+            
+            <li><a href="">Über uns</a></li>
+            
+            <li><a href="">Unsere Geschichte</a></li>
+            
+            <li><a href="">Preise</a></li>
+            
+            <li><a href="">Funktionen</a></li>
+            
+          </ul>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="col-6 col-md-3 col-lg-2">
+        
+        <div class="widget">
+          
+           <h5 class="widget-title">Company</h5>
+          
+          <ul class="list-unstyled mb-0">
+            
+            <li><a href="#">Our Team</a></li>
+            
+            <li><a href="#">Strategy</a></li>
+            
+            <li><a href="#">Service</a></li>
+            
+            <li><a href="#">Mission</a></li>
+            
+            <li><a href="#">Process</a></li>
+            
+          </ul>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="widget">
+          <h5 class="widget-title">Contact</h5>
+          
+          <address>Skyline GmbH<br />Alexander Flaming<br />Drosselweg 13<br />49661 Cloppenburg</address>
+          
+          <a href="mailto:info@skylinecircle.com">info@skylinecircle.com</a><br />
+           
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+  <div class="container inner pt-0 pb-40 d-flex align-items-center">
+    <p class="mb-0 mr-auto">© 2023 SkylineCircle.</p>
+    <ul class="social social-mute social-s ml-auto">
+      
+       <li><a href="https://www.facebook.com/profile.php?id=100063806130122/"><i class="jam jam-facebook"></i></a></li>
+      
+       <li><a href="https://www.instagram.com/skyline_circle/"><i class="jam jam-instagram"></i></a></li>
+      
+       <li><a href="https://www.youtube.com/@skylinecircle4995/"><i class="jam jam-youtube"></i></a></li>
+      
+    </ul>
+  </div>
+</footer>
+  </div>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+  <script src="/assets/js/plugins.js"></script>
+  <script src="/assets/js/simple-jekyll-search.min.js"></script>
+  <script src="/assets/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="/assets/images/favicon.png"/>
+  <title> SkylineCircle - Beweglichkeitszirkel </title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/plugins.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/settings.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/layers.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/revolution/css/navigation.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/type/type.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
+  <!--page wise css-->
+  <link rel="stylesheet" type="text/css" href="/assets/css/color/blue.css">
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/font/font2.css">
+    
+  
+  <!--/.page wise css-->
+  
+</head>
+<body >
+  <div class="content-wrapper">
+    <nav
+  class="navbar  absolute transparent nav-uppercase  navbar-hover-opacity navbar-expand-lg">
+  <div
+    class=" container  flex-row justify-content-center">
+    <div class="navbar-brand">
+      <a href="http://localhost:4000">
+        
+        <img src="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png"
+          srcset="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png 1x, /assets/images/logo-light@2x.png 2x"
+          class=" logo-light "
+          alt="Skyline Circle" style="max-height: 50px" />
+        
+        <img src="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png"
+          srcset="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png 1x, /assets/images/logo@2x.png 2x"
+          class=" logo-dark  "
+          alt="Skyline Circle" style="max-height: 50px" />
+      </a>
+    </div>
+    <div class="navbar-other ml-auto order-lg-3">
+      <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+        <li class="nav-item">
+          <div class="navbar-hamburger d-lg-none d-xl-none ml-auto">
+            <button class="hamburger animate plain" data-toggle="offcanvas-nav"><span></span></button>
+          </div>
+        </li>
+        
+        <li class="dropdown search-dropdown position-static nav-item">
+          <a href="#" role="button" class="collapse-toggle" data-toggle="collapse" data-target=".search-dropdown-menu"
+            aria-haspopup="true" aria-expanded="false"><i class="jam jam-search"></i></a>
+          <div class="dropdown-menu search-dropdown-menu w-100 collapse">
+            <div class="form-wrapper">
+              <form class="inverse-text">
+                <input type="text" id="search-input" class="form-control" placeholder="Search blog posts.." />
+                <i class="dropdown-close jam jam-close"></i>
+              </form>
+              <!-- /.search-form -->
+            </div>
+            <!-- /.form-wrapper -->
+            <ul id="results-container" class="position-static"></ul>
+          </div>
+        </li>
+        <li class="nav-item"><button class="plain" data-toggle="offcanvas-info"><i class="jam jam-info"></i></button>
+        </li>
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-other -->
+    <div class="navbar-collapse offcanvas-nav">
+      <div class="offcanvas-header d-lg-none d-xl-none">
+        <a href="http://localhost:4000">
+          <img src="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png"
+            srcset="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png 1x, /assets/images/logo-light@2x.png 2x"
+            alt="Skyline Circle" /></a>
+        <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
+      </div>
+      <ul class="navbar-nav  mx-auto ">
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/">Home</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/beweglichkeitszirkel">SkylineCircle</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/faszientower">Faszientower</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/all-in-1">All in 1</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/moby">Moby</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/skylinefoot">SkylineFoot</a>
+            
+            
+        </li>
+        
+        
+        
+        
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/methode">Methode</a>
+            
+            
+        </li>
+        
+        
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!-- /.navbar -->
+<div class="offcanvas-info inverse-text">
+  <button class="plain offcanvas-close offcanvas-info-close"><i class="jam jam-close"></i></button>
+  <a href="http://localhost:4000">
+    <img src="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png"
+      srcset="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png 1x, /assets/images/logo-light@2x.png 2x"
+      class=" logo-light "
+      alt="Skyline Circle" />
+  </a>
+  <div class="space30"></div>
+  <p>Skyline ist ein Familienunternehmen aus Niedersachsen, das sich auf die Produktion von Beweglichkeitszirkeln spezialisiert hat. Unsere hochwertigen Zirkel sind für Fitnessstudios, Physiopraxen, Hotels, Unternehmen und auch für zu Hause geeignet.</p>
+  <div class="space20"></div>
+  <div class="widget">
+    <h5 class="widget-title">Contact Info</h5>
+    <address> Skyline GmbH<br />Alexander Flaming<br />Drosselweg 13<br />49661 Cloppenburg<div class="space20"></div>
+      <a href="mailto:info@skylinecircle.com" class="nocolor"></a><br />
+      04471 900 93 70
+    </address>
+  </div>
+  <!-- /.widget -->
+  <div class="widget">
+    
+    <h3 class="widget-title">Mehr Erfahren</h3>
+    
+    <ul class="list-unstyled">
+      
+      <li><a href="about.html" class="nocolor">Über uns</a></li>
+      
+      <li><a href="about.html" class="nocolor">Unsere Geschichte</a></li>
+      
+      <li><a href="#" class="nocolor">Preise</a></li>
+      
+      <li><a href="#" class="nocolor">Funktionen</a></li>
+      
+    </ul>
+  </div>
+  <!-- /.widget -->
+  <div class="widget">
+    
+    <h3 class="widget-title">Folge uns</h3>
+    
+    <ul class="social social-mute social-s ml-auto">
+      
+      <li><a href="https://www.facebook.com/profile.php?id=100063806130122/"><i class="jam jam-facebook"></i></a></li>
+      
+      <li><a href="https://www.instagram.com/skyline_circle/"><i class="jam jam-instagram"></i></a></li>
+      
+      <li><a href="https://www.youtube.com/@skylinecircle4995/"><i class="jam jam-youtube"></i></a></li>
+      
+    </ul>
+  </div>
+  <!-- /.widget -->
+</div>
+<!-- /.offcanvas-info -->
+
+
+<div class="wrapper white-wrapper">
+  <div class="container inner">
+    
+    <div class="space80"></div>
+    <div class="row">
+      <div class="col-md-10 mx-auto">
+          <h2 class="section-title larger text-center">Die All-in-One Lösung für Enge Räume</h2>
+          <h3 class="display-4 text-center"> Optimales Training, Minimale Fläche – Der All-in-1 für Effektives Workout in Begrenzten Studios und Büros </h3>
+      </div>
+    </div>
+    <div class="space50"></div>
+    
+    <div class="row">
+      <div class="col-md-10 offset-md-1 col-lg-10">
+        <figure>
+          <img src="/assets/images/all-in-1/all-in-1.png"  alt="Optimales Training, Minimale Fläche – Der All-in-1 für Effektives Workout in Begrenzten Studios und Büros"/>
+        </figure>
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+    
+    <div class="space50"></div>
+    
+
+    
+    <div class="row gutter-80 gutter-md-30 text-center">
+      
+      <div class="col-md-4">
+        
+        <span class="icon icon-blob
+         
+         
+          icon-blob-yellow color-yellow
+          
+         mb-30"><i class="icofont-home"></i><span class="step bg-yellow">1</span></span>
+        
+        <h5>Effizientes Training auf Kleinem Raum</h5>
+        <p class="mb-15">Der All-in-1 ermöglicht ein effektives und sicheres Workout in begrenzten Studios oder Physiopraxen, ohne Kompromisse bei der Trainingsqualität einzugehen.</p>
+        
+      </div>
+      
+      <div class="col-md-4">
+        
+        <span class="icon icon-blob
+         
+         
+          icon-blob-purple color-purple
+          
+         mb-30"><i class="icofont-runner"></i><span class="step bg-yellow">2</span></span>
+        
+        <h5>Skyline Konzept für Natürliche Muskeldehnung</h5>
+        <p class="mb-15">Dank des bewährten Skyline Konzepts unterstützt der All-in-1 das Training, Muskulatur in ihre natürliche Länge zurückzuführen, was zu verbessertem Wohlbefinden und weniger Verletzungen führt.</p>
+        
+      </div>
+      
+      <div class="col-md-4">
+        
+        <span class="icon icon-blob
+         
+         
+          icon-blob-teal color-teal
+         
+         mb-30"><i class="icofont-check"></i><span class="step bg-yellow">3</span></span>
+        
+        <h5>Vielseitiges Training mit Geführten Übungen</h5>
+        <p class="mb-15">Mit acht speziell konzipierten Übungen und der Möglichkeit, kleine Kurzhanteln oder Therabänder zu verwenden, bietet der All-in-1 eine Vielzahl von Trainingsoptionen für ein umfassendes Workout-Erlebnis.</p>
+        
+      </div>
+      
+    </div>
+    <!--/.row -->
+    
+  </div>
+    <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 20.98">
+      <path d="M0,0V21H1070V0A6830.24,6830.24,0,0,1,0,0Z" /></svg></div>
+</div>
+
+
+
+
+
+
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <h3 class="display-2 text-center mb30">Die Übungen</h3>
+    <h4 class="display-4 text-center mb-80">Unsere All-in-1-Übungen</h4>
+    <div class="grid grid-view boxed">
+      <div class="tiles text-center light-gallery-wrapper">
+        <div class="row isotope">
+          
+          <div class="item grid-sizer col-md-6 col-lg-4 ">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded mb-30" style="max-height: 300px">
+                <a href="/assets/images/all-in-1/1.png" class="lightbox">
+                  <img src="/assets/images/all-in-1/1.png" alt=""/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#"></a></h2>
+                <div class="meta mb-0"></div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4 ">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded mb-30" style="max-height: 300px">
+                <a href="/assets/images/all-in-1/2.png" class="lightbox">
+                  <img src="/assets/images/all-in-1/2.png" alt=""/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#"></a></h2>
+                <div class="meta mb-0"></div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4 ">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded mb-30" style="max-height: 300px">
+                <a href="/assets/images/all-in-1/3.png" class="lightbox">
+                  <img src="/assets/images/all-in-1/3.png" alt=""/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#"></a></h2>
+                <div class="meta mb-0"></div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4 ">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded mb-30" style="max-height: 300px">
+                <a href="/assets/images/all-in-1/4.png" class="lightbox">
+                  <img src="/assets/images/all-in-1/4.png" alt=""/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#"></a></h2>
+                <div class="meta mb-0"></div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4 ">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded mb-30" style="max-height: 300px">
+                <a href="/assets/images/all-in-1/5.png" class="lightbox">
+                  <img src="/assets/images/all-in-1/5.png" alt=""/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#"></a></h2>
+                <div class="meta mb-0"></div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4 ">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded mb-30" style="max-height: 300px">
+                <a href="/assets/images/all-in-1/7.png" class="lightbox">
+                  <img src="/assets/images/all-in-1/7.png" alt=""/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#"></a></h2>
+                <div class="meta mb-0"></div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4 ">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded mb-30" style="max-height: 300px">
+                <a href="/assets/images/all-in-1/8.png" class="lightbox">
+                  <img src="/assets/images/all-in-1/8.png" alt=""/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#"></a></h2>
+                <div class="meta mb-0"></div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+          <div class="item grid-sizer col-md-6 col-lg-4 ">
+            <div class="box bg-white shadow p-30" style="padding-bottom: 0 !important">
+              <figure class="main overlay overlay2 rounded mb-30" style="max-height: 300px">
+                <a href="/assets/images/all-in-1/9.png" class="lightbox">
+                  <img src="/assets/images/all-in-1/9.png" alt=""/>
+                </a>
+              </figure>
+              <div class="post-content">
+                <h2 class="post-title mb-10"><a href="#"></a></h2>
+                <div class="meta mb-0"></div>
+              </div>
+              <!-- /.post-content -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.item -->
+          
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.tiles -->
+    </div>
+    <!-- /.grid -->
+  </div>
+</div>
+
+
+
+
+<div class="wrapper image-wrapper bg-image inverse-text" data-image-src="/assets/images/tim.jpg">
+  <div class="container inner text-center">
+  <div class="space100"></div>
+     <div class="row">
+        <div class="col-md-7 mx-auto">
+                    <div class="divider-heading color-white"><i class="c-flower"></i></div>
+                    <h3 class="display-3 text-center">Gesunde Mitarbeiter, Produktive Arbeitsumgebung. Stärken Sie Ihr Team mit dem All-in-1 Beweglichkeitstraining.</h3>
+                    <div class="space20"></div>
+                    <a href="#" class="btn btn-red btn-l btn-strong-hover">Jetzt Preis anfragen &raquo;</a>
+        </div>
+     </div>
+  <div class="space100"></div>
+  </div>
+</div>
+
+
+
+
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    
+    <div class="space100"></div>
+    <div class="row">
+      <div class="col-md-7 mx-auto">
+        <h2 class="title-color color-gray text-center">Optimieren Sie Ihr Büro mit dem All-in-1</h2>
+        <h3 class="display-3 mb-0 text-center">Gesündere Mitarbeiter, Produktivere Arbeitstage.</h3>
+        <div class="space50"></div>
+      </div>
+    </div>
+      <!-- /.container -->
+    
+    <div class="row align-items-center">
+      
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <figure><img src="/assets/images/faszientower/faszien.png" alt="Optimieren Sie Ihr Büro mit dem All-in-1"/></figure>
+      </div>
+      
+      <div class="space40 d-lg-none"></div>
+      <div class="col-lg-6 pl-60 pl-md-15">
+        
+        <div data-aos="fade-up" data-aos-delay="800">
+          <h4>Gesunde Mitarbeiter, Glückliche Büros</h4>
+          <p>Ergonomisches Sitzen allein reicht nicht aus. Mit dem All-in-1 Beweglichkeitstraining beugen Sie den schädlichen Auswirkungen des langen Sitzens vor, fördern die Gesundheit Ihrer Mitarbeiter und schaffen eine energiegeladene Arbeitsumgebung.</p>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-delay="800">
+          <h4>Steigern Sie die Produktivität, Senken Sie die Fehlzeiten</h4>
+          <p>Durch regelmäßiges Beweglichkeitstraining werden Rückenschmerzen und Haltungsschäden minimiert. Ihre Mitarbeiter fühlen sich besser, sind motivierter und leisten mehr – ein direkter Einfluss auf die Produktivität und eine Reduzierung von Fehlzeiten.</p>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-delay="800">
+          <h4>Erfolgreiche Unternehmen Investieren in Gesundheit</h4>
+          <p>In einer Welt, in der Bewegungsmangel und sitzende Tätigkeiten zu gesundheitlichen Problemen führen, zeigt Ihr Engagement für die Gesundheit Ihrer Mitarbeiter nicht nur soziale Verantwortung, sondern stärkt auch das Image Ihres Unternehmens.</p>
+        </div>
+        
+      </div>
+    </div>
+    <!--/.row -->
+    
+    
+    
+  </div>
+
+
+
+
+
+
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <h2 class="section-title mb-40 text-center">Häufig gestellte Fragen</h2>
+        <div id="accordion-2" class="accordion-wrapper">
+            
+          <div class="card shadow">
+            <div class="card-header" id="accordion-heading-2-1">
+              <h5>
+                <button class="collapsed" data-toggle="collapse" data-target="#accordion-collapse-2-1" aria-expanded="true" aria-controls="accordion-collapse-2-1">
+                    Warum ist Beweglichkeitstraining im Büro wichtig, besonders für meine Mitarbeiter?
+                </button>
+              </h5>
+            </div>
+            <!-- /.card-header -->
+            <div id="accordion-collapse-2-1" class="collapse" aria-labelledby="accordion-heading-2-1" data-parent="#accordion-2">
+              <div class="card-body">
+                <p>
+                     Beweglichkeitstraining im Büro ist entscheidend, um den schädlichen Auswirkungen des langen Sitzens entgegenzuwirken. Es verbessert die Körperhaltung, reduziert Rückenschmerzen und steigert die Produktivität, indem es die Gesundheit und das Wohlbefinden Ihrer Mitarbeiter fördert.
+
+                </p>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.collapse -->
+          </div>
+          <!-- /.card -->
+            
+          <div class="card shadow">
+            <div class="card-header" id="accordion-heading-2-1">
+              <h5>
+                <button class="collapsed" data-toggle="collapse" data-target="#accordion-collapse-2-2" aria-expanded="true" aria-controls="accordion-collapse-2-2">
+                    Wie oft sollten meine Mitarbeiter das Beweglichkeitstraining nutzen, um effektive Ergebnisse zu erzielen?
+                </button>
+              </h5>
+            </div>
+            <!-- /.card-header -->
+            <div id="accordion-collapse-2-2" class="collapse" aria-labelledby="accordion-heading-2-2" data-parent="#accordion-2">
+              <div class="card-body">
+                <p>
+                     Idealerweise sollten Ihre Mitarbeiter das Beweglichkeitstraining täglich für kurze Intervalle nutzen, um maximale Vorteile zu erzielen. Selbst kurze Übungseinheiten während des Arbeitstages können die Flexibilität verbessern und Muskelverspannungen reduzieren.
+
+                </p>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.collapse -->
+          </div>
+          <!-- /.card -->
+            
+          <div class="card shadow">
+            <div class="card-header" id="accordion-heading-2-1">
+              <h5>
+                <button class="collapsed" data-toggle="collapse" data-target="#accordion-collapse-2-3" aria-expanded="true" aria-controls="accordion-collapse-2-3">
+                    Welche Vorteile hat das All-in-1 Beweglichkeitstraining im Vergleich zu traditionellen Lösungen?
+                </button>
+              </h5>
+            </div>
+            <!-- /.card-header -->
+            <div id="accordion-collapse-2-3" class="collapse" aria-labelledby="accordion-heading-2-3" data-parent="#accordion-2">
+              <div class="card-body">
+                <p>
+                     Das All-in-1 Beweglichkeitstraining bietet eine umfassende Lösung, die gezielt auf die Bedürfnisse von Büroangestellten zugeschnitten ist. Es kombiniert ergonomische Übungen, die langem Sitzen auf dem Bürostuhl entgegenwirkend abgestimmt sind, mit Steh- und Dehnübungen. Dieses ganzheitliche Konzept fördert nicht nur die Beweglichkeit, sondern steigert auch die allgemeine Gesundheit und das Wohlbefinden Ihrer Mitarbeiter effektiver als herkömmliche Ansätze.
+
+                </p>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.collapse -->
+          </div>
+          <!-- /.card -->
+            
+          <div class="card shadow">
+            <div class="card-header" id="accordion-heading-2-1">
+              <h5>
+                <button class="collapsed" data-toggle="collapse" data-target="#accordion-collapse-2-4" aria-expanded="true" aria-controls="accordion-collapse-2-4">
+                    Wie kann ich sicherstellen, dass meine Mitarbeiter das Beweglichkeitstraining korrekt durchführen?
+                </button>
+              </h5>
+            </div>
+            <!-- /.card-header -->
+            <div id="accordion-collapse-2-4" class="collapse" aria-labelledby="accordion-heading-2-4" data-parent="#accordion-2">
+              <div class="card-body">
+                <p>
+                     Das All-in-1 Beweglichkeitstraining wird mit klaren Anleitungen und Demonstrationen geliefert, die sicherstellen, dass Ihre Mitarbeiter die Übungen korrekt ausführen. Darüber hinaus bietet unser Support-Team Schulungen und Unterstützung, um sicherzustellen, dass Ihre Mitarbeiter das Training sicher und effektiv durchführen können.
+
+                </p>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.collapse -->
+          </div>
+          <!-- /.card -->
+            
+          <div class="card shadow">
+            <div class="card-header" id="accordion-heading-2-1">
+              <h5>
+                <button class="collapsed" data-toggle="collapse" data-target="#accordion-collapse-2-5" aria-expanded="true" aria-controls="accordion-collapse-2-5">
+                    Was macht das SkylineCircle Beweglichkeitskonzept zur optimalen Lösung für Büroangestellte?
+                </button>
+              </h5>
+            </div>
+            <!-- /.card-header -->
+            <div id="accordion-collapse-2-5" class="collapse" aria-labelledby="accordion-heading-2-5" data-parent="#accordion-2">
+              <div class="card-body">
+                <p>
+                     Das SkylineCircle Beweglichkeitskonzept ist ein anerkanntes Bürobeweglichkeitstraining, das sich bereits in zahlreichen Fitnessstudios und Physiopraxen deutschlandweit bewährt hat. Unsere maßgeschneiderten Übungen und ergonomischen Ansätze helfen Menschen, ihre Beweglichkeit zu verbessern, Schmerzen zu reduzieren und ihre Gesundheit zu steigern. Unsere Programme sind speziell darauf ausgerichtet, die Bedürfnisse von Büroangestellten zu adressieren und ihnen wirksame Übungen für den Arbeitsalltag zu bieten. Die positiven Rückmeldungen und spürbaren Verbesserungen unserer Teilnehmer unterstreichen unsere Expertise auf diesem Gebiet.
+
+                </p>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.collapse -->
+          </div>
+          <!-- /.card -->
+            
+        </div>
+        <!-- /.accordion-wrapper -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+    <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-default" preserveAspectRatio="none" viewBox="0 0 1070 44.03">
+      <path d="M0,20S35-1,137,0C232.52,1,240,33,352,25c111.47-8,177-45.61,367-8,202,40,256-6,351-5V44H0Z" /></svg></div>
+
+</div>
+<!-- /.wrapper -->
+
+
+
+<div class="wrapper bg-default">
+  <div class="container inner">
+    <div class="space30"></div>
+    <div class="box shadow p-60 image-wrapper bg-full bg-image inverse-text rounded d-md-flex align-items-md-center justify-content-md-between" data-image-src="/assets/images/art/bg5.jpg">
+      <h3 class="display-3 mb-0">Klicken Sie jetzt auf „Preis anfragen“, um nähere Informationen und All-in-1 Preisangebote zu erhalten.</h3>
+      <div class="space30 d-md-none"></div>
+      <a href="#" class="btn btn-white btn-strong-hover mb-0">Preis anfragen &raquo;</a>
+    </div>
+    <!--/.box -->
+  </div>
+  <!-- /.container -->
+  <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-footer-dark-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 39.07">
+      <path d="M1070,39.07H0V21a6818.1,6818.1,0,0,1,1070,0Z" /></svg></div>
+</div>
+<!-- /.wrapper -->
+
+
+<footer class=" dark-wrapper inverse-text ">
+  <div class="container inner">
+    <div class="row">
+      <div class="col-md-4 col-lg-3">
+        <div class="widget">
+         <a href="">
+          
+            <img src="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png" srcset="https://skylinecircle.com/wp-content/uploads/2018/03/skylinecircle-win-e1520956843884.png 1x, /assets/images/logo-light@2x.png 2x" alt="Skyline Circle"/>
+            
+         </a>
+          <div class="space40"></div>
+          <p>© 2023 SkylineCircle.</p>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="col-md-4 col-lg-3">
+        <div class="widget">
+          <h3 class="widget-title">Kontakt aufnehmen</h3>
+          
+           <address>Skyline GmbH<br />Alexander Flaming<br />Drosselweg 13<br />49661 Cloppenburg</address>
+          
+           <a href="mailto:info@skylinecircle.com">info@skylinecircle.com</a><br />
+          04471 900 93 70
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="col-md-4 col-lg-3">
+        
+        <div class="widget">
+          
+           <h5 class="widget-title">Mehr Erfahren</h5>
+          
+          <ul class="list-unstyled mb-0">
+            
+            <li><a href="">Über uns</a></li>
+            
+            <li><a href="">Unsere Geschichte</a></li>
+            
+            <li><a href="">Preise</a></li>
+            
+            <li><a href="">Funktionen</a></li>
+            
+          </ul>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="space30 d-none d-md-block d-lg-none"></div>
+      <div class="col-md-12 col-lg-3">
+        <div class="widget">
+          
+           <h3 class="widget-title">Our Newsletter</h3>
+          
+          
+           <p>Subscribe to our newsletter to get our news & deals delivered to your inbox!</p>
+          
+          <div class="space10"></div>
+          <div class="newsletter-wrapper">
+            <form action="https://formsubmit.io/send/info@skylinecircle.com" target="_blank">
+              <div id="mc_embed_signup_scroll" class="input-group">
+                <input type="email"  name="user_email" class="email form-control mb-0 mr-2 mb-sm-0"  placeholder="Email Address" required>
+                <button type="submit" class="btn btn-rounded btn-default mr-0 mb-0 pull-right">
+                Join
+               </button>
+              </div>
+            </form>
+          </div>
+          <!-- /.newsletter-wrapper -->
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!--/.row -->
+  </div>
+  <!-- /.container -->
+</footer>
+
+
+  </div>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script src="/assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+  <script src="/assets/js/plugins.js"></script>
+  <script src="/assets/js/simple-jekyll-search.min.js"></script>
+  <script src="/assets/js/scripts.js"></script>
+</body>
+</html>
