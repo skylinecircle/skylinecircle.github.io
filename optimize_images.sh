@@ -15,8 +15,20 @@ find "$ASSETS_FOLDER" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.
     extension="${img##*.}"
     filename=$(basename "$img" | sed "s/\.[^.]*$//")
 
+    # Get the relative path of the image
+    relative_path="${img#$ASSETS_FOLDER/}"
+
+    # Get the directory path of the image relative to the assets folder
+    relative_dir=$(dirname "$relative_path")
+
+    # Create the corresponding directory structure in the optimized folder
+    mkdir -p "$OPTIMIZED_FOLDER/$relative_dir"
+
+    # Define the output path for the optimized image
+    optimized_img_path="$OPTIMIZED_FOLDER/$relative_dir/$filename.webp"
+
     # Check if WebP version already exists
-    if [[ -f "$OPTIMIZED_FOLDER/$filename.webp" ]]; then
+    if [[ -f "$optimized_img_path" ]]; then
         echo "$img is already optimized. Skipping."
         continue
     fi
@@ -24,19 +36,19 @@ find "$ASSETS_FOLDER" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.
     echo "Optimizing $img..."
 
     # Convert to WebP format
-    cwebp -q 80 "$img" -o "$OPTIMIZED_FOLDER/$filename.webp"
+    cwebp -q 80 "$img" -o "$optimized_img_path"
 
     # Resize image if it's larger than 1920x1080 (common full HD resolution)
-    mogrify -path "$OPTIMIZED_FOLDER" -resize '1920x1080>' "$img"
+    mogrify -path "$OPTIMIZED_FOLDER/$relative_dir" -resize '1920x1080>' "$img"
 
     # Compress original images based on type
     if [[ "$extension" == "jpg" || "$extension" == "jpeg" ]]; then
-        jpegoptim --max=80 --strip-all "$OPTIMIZED_FOLDER/$filename.$extension"
+        jpegoptim --max=80 --strip-all "$OPTIMIZED_FOLDER/$relative_dir/$filename.$extension"
     elif [[ "$extension" == "png" ]]; then
-        pngquant --force --ext .png --speed 1 "$OPTIMIZED_FOLDER/$filename.png"
+        pngquant --force --ext .png --speed 1 "$OPTIMIZED_FOLDER/$relative_dir/$filename.png"
     fi
 
-    echo "$img optimized and saved to $OPTIMIZED_FOLDER"
+    echo "$img optimized and saved to $OPTIMIZED_FOLDER/$relative_dir"
 done
 
 echo "Image optimization completed!"
