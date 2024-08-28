@@ -24,7 +24,87 @@
 <body >
   <div class="content-wrapper">
     <div class="content-wrapper">
-    <!-- Top Banner -->
+  <style>
+  button, a {word-wrap: break-word;}
+</style>
+<!-- Cookie Consent Banner in German -->
+<script type="text/javascript">
+    window.addEventListener('load', function(){
+        // Prüfen, ob der Benutzer bereits zugestimmt hat
+        var consentGiven = localStorage.getItem('cookieConsent');
+        if (!consentGiven) {
+            // Cookie-Banner anzeigen
+            var consentBanner = document.createElement('div');
+            consentBanner.innerHTML = `
+                <div id="cookieConsentBanner" style="position: fixed; bottom: 0; background-color: #fff; width: 100%; padding: 10px; border-top: 1px solid #ccc; text-align: center; z-index: 1000;">
+                    <p>Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Wenn Sie unsere Seite weiterhin nutzen, stimmen Sie der Verwendung von Cookies zu.
+                    <button id="acceptCookies" style="margin-left: 10px; background: green; color: white; padding: 4px 10px; cursor: pointer;">Akzeptieren</button>
+                    <button id="rejectCookies" style="margin-left: 10px;">Ablehnen</button></p>
+                </div>`;
+            document.body.appendChild(consentBanner);
+
+            // Handhabung der Klicks auf die Buttons
+            document.getElementById('acceptCookies').addEventListener('click', function() {
+                localStorage.setItem('cookieConsent', 'true');
+                document.getElementById('cookieConsentBanner').style.display = 'none';
+                loadScripts();
+            });
+
+            document.getElementById('rejectCookies').addEventListener('click', function() {
+                localStorage.setItem('cookieConsent', 'false');
+                document.getElementById('cookieConsentBanner').style.display = 'none';
+            });
+        } else if (consentGiven === 'true') {
+            loadScripts();
+        }
+    });
+
+    function loadScripts() {
+        // Google Tag Manager laden
+        var gtmScript = document.createElement('script');
+        gtmScript.src = '//www.googletagmanager.com/gtm.js?id=GTM-MDLZTCF';
+        document.head.appendChild(gtmScript);
+
+        // Google Analytics laden
+        var gaScript = document.createElement('script');
+        gaScript.src = '//www.google-analytics.com/analytics.js';
+        document.head.appendChild(gaScript);
+
+        // Facebook Pixel laden
+        var fbqScript = document.createElement('script');
+        fbqScript.src = 'https://connect.facebook.net/en_US/fbevents.js';
+        document.head.appendChild(fbqScript);
+
+        // Google Ads Conversion Tracking laden
+        var conversionScript = document.createElement('script');
+        conversionScript.src = '//www.googleadservices.com/pagead/conversion.js';
+        document.head.appendChild(conversionScript);
+
+        // Google Analytics und Facebook Pixel initialisieren, nachdem die Skripte geladen wurden
+        gtmScript.onload = function() {
+            // Google Tag Manager Initialisierungscode
+        };
+        gaScript.onload = function() {
+            ga('create', 'UA-76036863-1', 'auto');
+            ga('send', 'pageview');
+        };
+        fbqScript.onload = function() {
+            fbq('init', '433753747014730');
+            fbq('track', 'PageView');
+        };
+    }
+</script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDLZTCF" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Facebook Pixel (noscript) -->
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=433753747014730&ev=PageView&noscript=1" /></noscript>
+
+<!-- Top Banner -->
   <div style="background-color: #FF6347; color: white; text-align: center; padding: 10px 0; font-size: 18px; font-weight: bold;">
     <a href="https://maypower.typeform.com/to/dGjFS3f0" target="_blank" style="color: white; text-decoration: none;">
       📢 Nur bis Ende August: Kaufen Sie ein SkylineCircle-Produkt und erhalten Sie den FootSlab GRATIS (Wert €1.499,-)! 👉 Jetzt sichern!
